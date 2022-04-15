@@ -1,0 +1,4 @@
+run:
+  skip-files:
+    - convert_assign.go
+    - convert_assign_test.go
