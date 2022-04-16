@@ -201,7 +201,7 @@ func convertAssignRows(dest, src any, rows *Rows) error {
 	}
 
 	dpv := reflect.ValueOf(dest)
-	if dpv.Kind() != reflect.Pointer {
+	if dpv.Kind() != reflectPointer {
 		return errors.New("destination not a pointer")
 	}
 	if dpv.IsNil() {
@@ -234,7 +234,7 @@ func convertAssignRows(dest, src any, rows *Rows) error {
 	// This also allows scanning into user defined types such as "type Int int64".
 	// For symmetry, also check for string destination types.
 	switch dv.Kind() {
-	case reflect.Pointer:
+	case reflectPointer:
 		if src == nil {
 			dv.Set(reflect.Zero(dv.Type()))
 			return nil
