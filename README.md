@@ -1,5 +1,9 @@
 # sqlconv
 
+[![CI](https://github.com/dochang/sqlconv/actions/workflows/ci.yml/badge.svg)](https://github.com/dochang/sqlconv/actions/workflows/ci.yml)
+[![codecov](https://codecov.io/gh/dochang/sqlconv/branch/master/graph/badge.svg?token=qmz7MW4X1k)](https://codecov.io/gh/dochang/sqlconv)
+[![Go Reference](https://pkg.go.dev/badge/github.com/dochang/sqlconv.svg)](https://pkg.go.dev/github.com/dochang/sqlconv)
+
 `sqlconv` is a Go library converts between Go values and SQL values.
 
 ## Installation
