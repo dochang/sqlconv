@@ -4,6 +4,7 @@ package sqlconv
 //
 // ScannerConverter converts SQL value to Go value.
 type ScannerConverter interface {
+	// ScanConvert converts a SQL value src to a Go value dest.
 	ScanConvert(dest, src any) error
 }
 
