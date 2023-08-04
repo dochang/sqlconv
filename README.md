@@ -1,6 +1,7 @@
 # sqlconv
 
 [![CI](https://github.com/dochang/sqlconv/actions/workflows/ci.yml/badge.svg)](https://github.com/dochang/sqlconv/actions/workflows/ci.yml)
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/dochang/sqlconv/tree/master.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/dochang/sqlconv/tree/master)
 [![codecov](https://codecov.io/gh/dochang/sqlconv/branch/master/graph/badge.svg?token=qmz7MW4X1k)](https://codecov.io/gh/dochang/sqlconv)
 [![Go Reference](https://pkg.go.dev/badge/github.com/dochang/sqlconv.svg)](https://pkg.go.dev/github.com/dochang/sqlconv)
 
