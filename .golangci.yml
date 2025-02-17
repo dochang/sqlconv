@@ -4,3 +4,5 @@ issues:
     - convert_assign_test.go
     # We import some code from Go standard library.  They are not compliant
     # with golangci-lint rules.
+run:
+  timeout: 10m
