@@ -1,8 +1,30 @@
-issues:
-  exclude-files:
-    - convert_assign.go
-    - convert_assign_test.go
-    # We import some code from Go standard library.  They are not compliant
-    # with golangci-lint rules.
+version: "2"
+linters:
+  exclusions:
+    generated: lax
+    presets:
+      - comments
+      - common-false-positives
+      - legacy
+      - std-error-handling
+    paths:
+      - convert_assign.go
+      - convert_assign_test.go
+      # We import some code from Go standard library.  They are not compliant
+      # with golangci-lint rules.
+      - third_party$
+      - builtin$
+      - examples$
+formatters:
+  exclusions:
+    generated: lax
+    paths:
+      - convert_assign.go
+      - convert_assign_test.go
+      # We import some code from Go standard library.  They are not compliant
+      # with golangci-lint rules.
+      - third_party$
+      - builtin$
+      - examples$
 run:
   timeout: 10m
